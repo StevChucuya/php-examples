@@ -9,7 +9,11 @@ echo "multiplicar (3)";
 echo "dividir (4)";
 echo "potencia (5)";
 echo "raiz (6)";
+echo "salir (0)";
 
+do 
+{
+    echo "Ingresa la Opcion :";
 $opcion = fgets(STDIN);
 switch ($opcion) {
     case 1:
@@ -70,6 +74,13 @@ switch ($opcion) {
     default:
         # code...
         break;
+    }
+    if($opcion == 0) break;
+    echo "\n Desea Continuar? (s/n) (1=si/0=no): ";
+    $rpta = fgets(STDIN); 
 }
+while($rpta == 1);
+
+
 
 ?>
