@@ -1,7 +1,7 @@
 <?php   
 
 //ejemplo 1
-
+// hola mundo
  function obtenersaludo($parametro){
     return "Hola Como estas ".$parametro;
 }
