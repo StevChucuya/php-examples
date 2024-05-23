@@ -29,8 +29,6 @@ class cAlculadora{
 
       return pow($this->primernumero,$this->segundonumero);
    }
-  
-   
    public function raiz() {
              return sqrt($this->primernumero);
    }
