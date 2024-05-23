@@ -20,19 +20,20 @@ class Animal{
         ."\n"."Color: ".$colortext.$this->color."\033[0m"
         ."\n"."En extencion?: ".($this->estaExtincion? "Si" : "No");
         return $mensaje;
-
-
-
-
-        
         }
         elseif("Rojo" == $this->color){
-        $colortext= $this->color == "Rojo" ? "\033[33m" : "";
+        $colortext= $this->color == "Rojo" ? "\033[31m" : "";
         $mensaje = "Nombre: ".$this->nombre
         ."\n"."Color: ".$colortext.$this->color."\033[0m"
         ."\n"."En extencion?: ".($this->estaExtincion? "Si" : "No");
         return $mensaje;
-
+        }
+        elseif("Amarillo" == $this->color){
+            $colortext= $this->color == "Amarillo" ? "\033[33m" : "";
+            $mensaje = "Nombre: ".$this->nombre
+            ."\n"."Color: ".$colortext.$this->color."\033[0m"
+            ."\n"."En extencion?: ".($this->estaExtincion? "Si" : "No");
+        return $mensaje;
         }
     }
     
@@ -50,24 +51,32 @@ class Animal{
 }
 
 
+
+
+
+
+
+
 class Perro extends Animal {
     public function hacerSonido($sonido =""){
         parent::hacerSonido();
         return $sonido;
     }
-
 }
 
 class Gato extends Animal{
 public function hacerSonido($sonido =""){
     parent::hacerSonido();
     return $sonido;
+    }
 }
 
-
+class Pollo extends Animal {
+    public function hacerSonido($sonido =""){
+        parent::hacerSonido();
+        return $sonido;
+    }
 }
-
-
 
 
 
