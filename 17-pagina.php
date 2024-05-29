@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Registro de Paciente</h1>
-<form id="formulario" action="21-pdo-post.php" method="post">
+<form id="formulario" action="17.1-pagina2.php" method="post">
 <label for ="nombre">Nombres:</label>
 <input type="text" id="nombre" name="nombre" required><br>
 <label for="apellido">Apellidos:</label>
