@@ -92,6 +92,10 @@
             $edad = $_POST['edad'];
             $talla = $_POST['talla'];
             $peso = $_POST['peso'];
+            $fiebre = $_POST['fiebre'];
+            $disnea = $_POST['disnea'];
+            $tos = $_POST['tos'];
+            
             // Obtener otros campos del formulario como síntomas, fecha de vacunación, etc.
 
             // SQL para actualizar los datos del paciente
@@ -100,7 +104,10 @@
                     apellidos = '$apellido',
                     edad = '$edad',
                     talla_m = '$talla',
-                    peso_kg = '$peso'
+                    peso_kg = '$peso',
+                    sintoma_fiebre = '$fiebre', 
+                    sintoma_disnea = '$disnea',
+                    sintoma_tos = '$tos'    
                     WHERE id = $id"; // Aquí debes reemplazar $id con el ID del paciente que deseas actualizar
 
             // Ejecutar la consulta SQL
@@ -140,17 +147,9 @@
         <label for="fiebre">Fiebre</label>
         <input type="checkbox" name="disnea" id="disnea">
         <label for="disnea">Disnea</label>
-        <input type="checkbox" name="dolor_muscular" id="dolor_muscular">
-        <label for="dolor_muscular">Dolor Muscular</label>
-        <input type="checkbox" name="gripe" id="gripe">
-        <label for="gripe">Gripe</label>
-        <input type="checkbox" name="presion_alta" id="presion_alta">
-        <label for="presion_alta">Presión Alta</label>
-        <input type="checkbox" name="fatiga" id="fatiga">
-        <label for="fatiga">Fatiga</label>
-        <input type="checkbox" name="garraspera" id="garraspera">
-        <label for="garraspera">Garraspera</label>
-        <!-- Agrega más síntomas aquí -->
+        <input type="checkbox" name="tos" id="tos">
+        <label for="tos">Tos</label>
+    
 
         <label for="fecha">Fecha de vacunación:</label>
         <input type="date" id="fecha" name="fecha" placeholder="dd/mm/aaaa">
