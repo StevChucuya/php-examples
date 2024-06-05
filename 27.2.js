@@ -59,7 +59,35 @@ function agregarFilas(id,paciente){
     "<td>"+paciente.sintoma_tos+"</td>"+
     "<td>"+paciente.sintoma_fiebre+"</td>"+
     "<td>"+paciente.sintoma_disnea+"</td>"+
-    "<td><button type='button'>Editar</></td>"+
+    "<td><button type='button' onclick =editar('"+paciente.nombres+"','"+paciente.edad+"','"+paciente.talla_m+"','"+paciente.peso_kg+"','"+paciente.sintoma_tos+"','"+paciente.sintoma_fiebre+"','"+paciente.sintoma_disnea+"');>Editar</button></td>"+
+
     "</tr>";
     $(id +" tr:last").after(html);
 }
+
+function editar(nombres,edad,talla_m,peso_kg,sintoma_tos,sintoma_fiebre,sintoma_disnea){
+
+    $('#exampleModal').modal('show');
+    $("#nombre2").val(nombres);
+
+    $('#exampleModal').modal('show');
+    $("#nombre3").val(edad);
+
+    $('#exampleModal').modal('show');
+    $("#nombre4").val(talla_m);
+
+    $('#exampleModal').modal('show');
+    $("#nombre5").val(peso_kg);
+
+    $('#exampleModal').modal('show');
+    $("#exampleRadios1").val(sintoma_tos);
+    
+    $('#exampleModal').modal('show');
+    $("#exampleRadios2").val(sintoma_fiebre);
+
+    $('#exampleModal').modal('show');
+    $("#exampleRadios3").val(sintoma_disnea);
+
+}
+
+
