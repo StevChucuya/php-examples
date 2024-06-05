@@ -13,7 +13,7 @@
     <input type="text" placeholder="Escribe aqui" name="nombre" id ="nombre" /><br>
     <label id="tos" name="tos">Tos</label><input type="checkbox" for="tos">
     <button type="button" onclick="buscarPacientes();">Buscar</button>
-    <table style="border: 1px solid black;">
+    <table style="border: 1px solid black;" id="tabla">
         <tr>
             <td>Paciente</td>
             <td>Edad</td>
@@ -23,7 +23,9 @@
             <td>Fiebre</td>
             <td>Disnea</td>
             <td>Acciones</td>
-        </tr>       
+        </tr>   
+        
+        
     </table>
     <!-- </form> -->
     <script type="text/javascript" 
