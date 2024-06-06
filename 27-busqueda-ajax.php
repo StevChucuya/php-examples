@@ -13,9 +13,11 @@
     <label id="tos" name="tos">Tos</label><input type="checkbox" for="tos">
     <button type="button" onclick="buscarPacientes();">Buscar</button>
     <table style="border: 1px solid black;" id="tabla">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Nuevo Paciente
-    </button>
+
+
+    <button type="button" onclick="limpiarCamposNuevoPaciente();" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Nuevo Paciente</button>
+
+
         <tr>
             <td>Paciente</td>
             <td>Edad</td>
@@ -61,28 +63,28 @@
                 </div>
                 <div class="modal-body">
                 <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1">
+                <input class="form-check-input" type="checkbox" name="nombre6" id="nombre6" value="option1">
                 <label class="form-check-label" for="exampleRadios1">Tos</label>
                 </div>
                 </div>
                 <div class="modal-body">
                 <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option1">
+                <input class="form-check-input" type="checkbox" name="nombre7" id="nombre7" value="option1">
                 <label class="form-check-label" for="exampleRadios1">Fiebre</label>
                 </div>
                 </div>
                 <div class="modal-body">
                 <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios3" value="option1">
+                <input class="form-check-input" type="checkbox" name="nombre8" id="nombre8" value="option1">
                 <label class="form-check-label" for="exampleRadios1">Disnea</label>
                 </div>
                 </div>
                 <div class="modal-body">
-                    <td><button type='button' onclick =editar>Guardar</button></td>
+                    <input type="hidden" name="id" id="id_paciente" value="ID_DEL_PACIENTE_A_ACTUALIZAR">
+                    <button type='button' class="btn-accept" onclick="actualizar();">Guardar</button>&nbsp;
                 </div>
                 <div class="modal-body">
-                
-                    <td><button type='button' onclick =cancelar>Cancelar</button></td>
+                    <button type='button' class="btn-warning" onclick ="cancelar();">Cancelar</button>
                 </div>
             </div>
         </div>
